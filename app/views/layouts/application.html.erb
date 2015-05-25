@@ -6,8 +6,7 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
+  <%= yield %>
+  <%= requirejs_include_tag 'application' %>
 </body>
 </html>

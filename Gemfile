@@ -9,7 +9,14 @@ gem 'uglifier', '>= 1.3.0'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
+gem 'requirejs-rails'
+source 'https://rails-assets.org' do
+  gem 'rails-assets-jquery'
+  gem 'rails-assets-bootstrap-sass'
+end
+
 group :development, :test do
+  gem 'jasmine-rjs'
   gem 'rspec-rails'
   gem 'byebug'
   gem 'web-console', '~> 2.0'
